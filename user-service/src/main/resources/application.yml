@@ -1,0 +1,12 @@
+server:
+  port: 8080
+spring:
+  cloud:
+    stream:
+      bindings:
+        consumeOrder-in-0:
+          destination: order
+        approved-out-0:
+          destination: approved
+        rejected-out-0:
+          destination: rejected
